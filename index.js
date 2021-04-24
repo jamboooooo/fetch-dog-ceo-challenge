@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const IMAGES_URL = `https://dog.ceo/api/breeds/image/random/${IMAGES_COUNT}`;
 
   // ссылка для загрузки списка пород
-  const BREEDS_URL = "https://dog.ceo/api/breeds/list/all";
+  const BREEDS_URL = "https://dog.ceo/api/breeds/list";
 
   // узел, в котором будет список изображений
   const imagesContainer = document.querySelector('.images');
@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ТВОЙ КОД
-  
+
 });

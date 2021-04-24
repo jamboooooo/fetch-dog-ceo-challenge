@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const IMAGES_URL = `https://dog.ceo/api/breeds/image/random/${IMAGES_COUNT}`;
 
-  const BREEDS_URL = "https://dog.ceo/api/breeds/list/all";
+  const BREEDS_URL = "https://dog.ceo/api/breeds/list";
 
   const imagesContainer = document.querySelector('.images');
 
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderBreedsOnDOM(json) {
     breedsContainer.textContent = "";
 
-    const breedsList = Object.keys(json.message);
+    const breedsList = json.message;
 
     for(let i = 0; i < breedsList.length; i++) {
       renderBreedItem(breedsList[i]);
